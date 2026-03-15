@@ -1,6 +1,5 @@
 import java.util.Scanner;
 public class Main {
-
     public static void main(String[] args) {
         Scanner f = new Scanner(System.in);
         while (true) {
@@ -10,29 +9,16 @@ public class Main {
             System.out.println("3 - Выход. ");
             if (f.hasNextInt()) {
                 int d = f.nextInt();
-                if ( d == 3) {
+                if (d == 3) {
                     System.out.println("Всего доброго!");
                     break;
 
-                } else if (d == 1){
-                    System.out.println("Введите число: ");
-                    int n = f.nextInt();
-                    if (n > 0){
-                        long res = Fibonacci.calculate(n);
-                        System.out.println("Результат: " + res);
-                    }  else {
-                        System.out.println("Введенное число должно быть больше 0! ");
-                    }
                 } else if (d == 2) {
-                    System.out.println("Введите число: ");
-                    int n = f.nextInt();
-                    if (n > 0){
-                        long fac = Factorial.calculate(n);
-                        System.out.println("Результат: " + fac);
-                    }  else {
-                        System.out.println("Введенное число должно быть больше 0! ");
-                    }
-
+                    long res = Fibonacci.calculate();
+                    System.out.println("Результат: " + res);
+                } else if (d == 1) {
+                    long fac = Factorial.calculate();
+                    System.out.println("Результат: " + fac);
                 } else {
                     System.out.println("Неверный вариант выбора! ");
                 }
