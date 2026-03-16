@@ -12,7 +12,6 @@ public class Main {
                 if (d == 3) {
                     System.out.println("Всего доброго!");
                     break;
-
                 } else if (d == 2) {
                     Fibonacci calc = new Fibonacci();
                     long res = calc.calculate();

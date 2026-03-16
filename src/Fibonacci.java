@@ -16,14 +16,14 @@ public class Fibonacci {
                     System.out.println("Введенное число должно быть больше 0!");
                     continue;
                 }
-                long res = appFactorial(n);
+                long res = addFactorial(n);
                 return res;
             } catch (NumberFormatException ex) {
                 System.out.println("Это не целое число. Попробуйте ещё раз.");
             }
         }
     }
-private long appFactorial (int n){
+private long addFactorial (int n){
             long a = 0;
             long b = 1;
             for (int i = 0; i < n; i++) {
