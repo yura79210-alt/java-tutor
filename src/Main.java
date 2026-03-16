@@ -14,23 +14,30 @@ public class Main {
                     break;
 
                 } else if (d == 2) {
-                    long res = Fibonacci.calculate();
-                    System.out.println("Результат: " + res);
-                } else if (d == 1) {
-                    long fac = Factorial.calculate();
-                    System.out.println("Результат: " + fac);
-                } else {
-                    System.out.println("Неверный вариант выбора! ");
-                }
-            } else {
-                String e = f.next();
-                if (e.equals("exit")) {
-                    System.out.println("Всего доброго!");
-                    break;
-                } else {
-                    System.out.println("Вы ввели не число ");
+                    Fibonacci calc = new Fibonacci();
+                    long res = calc.calculate();
+                    if (res >= 0) {
+                        System.out.println("Результат: " + res);
+                    }
+                }else if (d == 1) {
+                        Factorial calc = new Factorial();
+                        long fac = calc.calculate();
+                        if (fac >= 0) {
+                            System.out.println("Результат: " + fac);
+                        } else {
+                            System.out.println("Неверный вариант выбора! ");
+                        }
+                    } else {
+                        String e = f.next();
+                        if (e.equals("exit")) {
+                            System.out.println("Всего доброго!");
+                            break;
+                        } else {
+                            System.out.println("Вы ввели не число ");
+                        }
+                    }
                 }
             }
         }
     }
-}
+

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Fibonacci {
-    public static long calculate() {
+    public long calculate() {
         Scanner f = new Scanner(System.in);
         while (true) {
             System.out.print("Введите число (или exit для выхода): ");
@@ -16,14 +16,14 @@ public class Fibonacci {
                     System.out.println("Введенное число должно быть больше 0!");
                     continue;
                 }
-                long res = completeFactorial(n);
+                long res = appFactorial(n);
                 return res;
             } catch (NumberFormatException ex) {
                 System.out.println("Это не целое число. Попробуйте ещё раз.");
             }
         }
     }
-private static long completeFactorial (int n){
+private long appFactorial (int n){
             long a = 0;
             long b = 1;
             for (int i = 0; i < n; i++) {

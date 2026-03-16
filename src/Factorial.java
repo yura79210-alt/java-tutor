@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Factorial {
-    public static long calculate() {
+    public long calculate() {
         Scanner f = new Scanner(System.in);
         while (true) {
             System.out.print("Введите число (или exit для выхода): ");
@@ -22,7 +22,7 @@ public class Factorial {
             }
         }
     }
-    private static long completeFactorial (int n){
+    private long completeFactorial (int n){
                 long fac = 1;
                 for (int i = 1; i <= n; i++) {
                     fac *= i;
