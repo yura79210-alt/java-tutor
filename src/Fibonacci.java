@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Fibonacci {
     public long calculate() {
         Scanner f = new Scanner(System.in);
@@ -23,14 +24,15 @@ public class Fibonacci {
             }
         }
     }
-private long addFactorial (int n){
-            long a = 0;
-            long b = 1;
-            for (int i = 0; i < n; i++) {
-                long c = a + b;
-                a = b;
-                b = c;
-            }
-            return b;
+
+    private long addFactorial(int n) {
+        long a = 0;
+        long b = 1;
+        for (int i = 0; i < n; i++) {
+            long c = a + b;
+            a = b;
+            b = c;
         }
+        return b;
     }
+}

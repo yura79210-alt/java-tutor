@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         Scanner f = new Scanner(System.in);
@@ -18,25 +19,25 @@ public class Main {
                     if (res >= 0) {
                         System.out.println("Результат: " + res);
                     }
-                }else if (d == 1) {
-                        Factorial calc = new Factorial();
-                        long fac = calc.calculate();
-                        if (fac >= 0) {
-                            System.out.println("Результат: " + fac);
-                        } else {
-                            System.out.println("Неверный вариант выбора! ");
-                        }
+                } else if (d == 1) {
+                    Factorial calc = new Factorial();
+                    long fac = calc.calculate();
+                    if (fac >= 0) {
+                        System.out.println("Результат: " + fac);
                     } else {
-                        String e = f.next();
-                        if (e.equals("exit")) {
-                            System.out.println("Всего доброго!");
-                            break;
-                        } else {
-                            System.out.println("Вы ввели не число ");
-                        }
+                        System.out.println("Неверный вариант выбора! ");
+                    }
+                } else {
+                    String e = f.next();
+                    if (e.equals("exit")) {
+                        System.out.println("Всего доброго!");
+                        break;
+                    } else {
+                        System.out.println("Вы ввели не число ");
                     }
                 }
             }
         }
     }
+}
 

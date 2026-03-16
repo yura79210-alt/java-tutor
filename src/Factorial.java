@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Factorial {
     public long calculate() {
         Scanner f = new Scanner(System.in);
@@ -22,12 +23,13 @@ public class Factorial {
             }
         }
     }
-    private long completeFactorial (int n){
-                long fac = 1;
-                for (int i = 1; i <= n; i++) {
-                    fac *= i;
-                }
-                return fac;
-            }
+
+    private long completeFactorial(int n) {
+        long fac = 1;
+        for (int i = 1; i <= n; i++) {
+            fac *= i;
         }
+        return fac;
+    }
+}
 
